@@ -12,9 +12,9 @@ A simple and clean web application to track your daily expenses with monthly sum
 
 ## 🛠️ Tech Stack
 
-- **Frontend**: HTML5, CSS3, JavaScript (ES6+)
-- **Backend**: PHP 7.4+
-- **Database**: MySQL 5.7+
+- **Frontend**: HTML, CSS, JavaScript
+- **Backend**: PHP 
+- **Database**: MySQL
 
 ## 📋 Categories
 
@@ -28,6 +28,13 @@ The app supports the following expense categories:
 - 📚 Education
 - 📌 Other
 
+<<<<<<< HEAD
+=======
+## 🤝 Contributing
+
+Feel free to fork this project and make improvements!
+
+>>>>>>> ea632b8ba842a3f3d72654d6314a39e8ec61ad80
 ---
 
 Happy Expense Tracking! 💰📊
