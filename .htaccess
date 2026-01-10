@@ -1,0 +1,21 @@
+# Enable error display (disable in production)
+php_flag display_errors Off
+php_flag log_errors On
+
+# Set default charset
+AddDefaultCharset UTF-8
+
+# Enable mod_rewrite (if needed for clean URLs)
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+</IfModule>
+
+# Prevent directory browsing
+Options -Indexes
+
+# Protect sensitive files
+<FilesMatch "^(config\.php|\.htaccess)$">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>
