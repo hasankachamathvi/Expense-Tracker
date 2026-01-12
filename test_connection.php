@@ -7,8 +7,8 @@ echo "<h2>Testing Database Connection</h2>";
 
 // Database configuration
 $host = 'localhost';
-$user = 'root';
-$pass = '';
+$user = 'userh';
+$pass = '1234';
 $dbname = 'expense_tracker';
 
 echo "<h3>Step 1: Testing MySQL Connection</h3>";
