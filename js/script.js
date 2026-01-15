@@ -92,7 +92,7 @@ function displayExpenses(expenses) {
         html += `
             <div class="expense-item">
                 <div class="expense-details">
-                    <div class="expense-amount">₹${parseFloat(expense.amount).toFixed(2)}</div>
+                    <div class="expense-amount">RS.${parseFloat(expense.amount).toFixed(2)}</div>
                     <span class="expense-category">${expense.category}</span>
                     <div class="expense-description">${expense.description}</div>
                     <div class="expense-date">${formatDate(expense.date)}</div>
@@ -168,7 +168,7 @@ function displaySummary(data) {
     let html = `
         <div class="total-expense">
             <h3>Total Spent</h3>
-            <div class="amount">₹${parseFloat(data.total).toFixed(2)}</div>
+            <div class="amount">RS.${parseFloat(data.total).toFixed(2)}</div>
         </div>
     `;
     
@@ -180,7 +180,7 @@ function displaySummary(data) {
             html += `
                 <div class="category-item">
                     <div class="category-name">${cat.category}</div>
-                    <div class="category-amount">₹${parseFloat(cat.total).toFixed(2)}</div>
+                    <div class="category-amount">RS.${parseFloat(cat.total).toFixed(2)}</div>
                 </div>
             `;
         });
