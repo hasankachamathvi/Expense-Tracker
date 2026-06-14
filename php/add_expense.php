@@ -10,7 +10,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST')
     
     // Validate inputs
     if (empty($amount) || empty($category) || empty($description) || empty($date)) 
-        {
+    {
         echo json_encode([
             'success' => false,
             'message' => 'All fields are required'
