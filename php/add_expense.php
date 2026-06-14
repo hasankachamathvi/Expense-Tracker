@@ -41,7 +41,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST')
             'message' => 'Expense added successfully',
             'id' => $conn->insert_id
         ]);
-    } else {
+    } 
+    else {
         echo json_encode([
             'success' => false,
             'message' => 'Error adding expense: ' . $stmt->error
