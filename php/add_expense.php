@@ -34,7 +34,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST')
     $stmt = $conn->prepare("INSERT INTO expenses (amount, category, description, date) VALUES (?, ?, ?, ?)");
     $stmt->bind_param("dsss", $amount, $category, $description, $date);
     
-    if ($stmt->execute()) {
+    if ($stmt->execute()) 
+        {
         echo json_encode([
             'success' => true,
             'message' => 'Expense added successfully',
