@@ -53,7 +53,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST')
     $stmt->close();
     $conn->close();
 } 
-else {
+else 
+    {
     echo json_encode([
         'success' => false,
         'message' => 'Invalid request method'
