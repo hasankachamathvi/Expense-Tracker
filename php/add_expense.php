@@ -1,7 +1,8 @@
 <?php
 require_once 'config.php';
 
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+if ($_SERVER['REQUEST_METHOD'] === 'POST')
+     {
     $amount = $_POST['amount'] ?? '';
     $category = $_POST['category'] ?? '';
     $description = $_POST['description'] ?? '';
